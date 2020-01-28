@@ -65,86 +65,186 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-.navbar {
-	border: 1px solid black;
+.container {
+	width: 80%;
+	margin: 0 auto;
+	border: 1px dashed pink;
+}
+
+nav {
 	display: flex;
-	flex-direction: row;
+	justify-content: space-evenly;
+	width: 100%;
+	
+}
+.navbar {
+	/* border: 1px solid black; */
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 2.5%;
+	
 }
 
 nav a {
 	text-decoration: none;
-	display: inline;
-	margin:50px;
-}
-
-header {
-	border: 2px solid pink;
-	display: flex;
-	justify-content: center;
+	/*border: 1px dashed gray;*/
+	display: flex;	
+	margin-top: 1%;
+	color: gray;
+	flex-direction: row;
+	justify-content: space-evenly;
 }
 
 .h1 {
-	border: 2px solid red;
-	font-size: 4em;
-	padding-top: 10%;
-	height: 5%;
+	/*border: 1px dashed fuchsia;*/
+	margin-top: 30%;
+	font-size: 5em;
+	font-weight: bolder;
+	text-align: center;
+	text-transform: uppercase;
+	font-style: italic;
+	font-family: 'Bangers' , cursive;
+	letter-spacing: 1px;
 }
 
+
+
+.text-w-button {
+	display: flex;
+	flex-direction: column;	
+	padding-left: 20%;
+	text-align: center;
+}
+
+.button {
+	/*border: 1px solid fuchsia;*/
+	margin-top: 1%;
+	padding-left: 25% 25%;
+	border: 1px solid black;
+	color: black;
+	padding-bottom: 2%;
+	padding-top: 2%;
+	width: 60%;
+	
+}
 
 button {
-	border: 2px dash green;
-
+	border: 2px solid pink
+	border: none;
+	font-size: medium;
+	align-items: center;
+	padding-left: 15%;
 }
+
+.header {
+	/*border: 2px solid pink;*/
+	display: flex;
+	flex-direction: row;
+}
+
 .img-header {
-	border: 2px solid khaki;
+	float: right;
+	padding-top: 5%;
+	margin-left: 15%;
 	
+}
+
+header {
+	/*border: 1px solid skyblue;*/
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 7%;
 	
 }
 
 .content {
-	border: 2px solid skyblue;
+	/*border: 15px solid skyblue;*/
 	border-top: 1px solid gray;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.content h3 {
+	font-weight: bolder;
+	font-size: 10em:
+}
+
+p {
+	font-weight: lighter;
 }
 
 .top-content {
-	border: 2px dashed blueviolet;
+	/*border: 2px dashed blueviolet;*/
 	display: flex;
 	flex-direction: row;
-
+	justify-content: space-evenly;
+	padding-bottom: 2%;
+	text-align: left;
+	border-top: 1px solid black;
 }
 
 .features {
-	border: 2px solid firebrick;
+	/*border: 2px solid firebrick;*/
+	padding:2%;
 }
 
 .middle-img {
-	border: 2px dashed blue;
+	/*border: 2px dashed blue;*/
 	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
-  	width: 90%;
-}
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
 }
 
 .bottom-content {
-	border: 6px solid black;
+	border: 2px solid black;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
-	
-}
-
-.bottom-content .features {
-	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
+	border-bottom: 1px solid black;
+	text-align: left;
+	padding-top: 1.5%;
+	padding-bottom: 5%;
 	
 }
 
 address {
-	border: 2px dashed skyblue;
-	border-top: 1px solid gray;
+	/*border: 2px dashed skyblue;*/
+}
+
+.h3 {
+	margin-top:2%;
+	font-weight: bolder;
 }
 
 footer {
-	border: 2px solid yellow;
+	/*border: 2px solid yellow;*/
+	text-align: center;
+	padding-top: 5%;
+}
+
+.middle-services {
+	border: 2px solid black;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.middle-services > div {
+	flex: 4;
+}
+
+.features-services {
+	border: 1px dashed black;
+	display: flex;
+	flex:50%;
+}
+
+.services-header-img {
+	/*border: 2px dashed blue;*/
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
 }
